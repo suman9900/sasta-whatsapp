@@ -14,6 +14,8 @@ const roomMemberSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+}, {
+  collection: 'shocket_room_members'
 });
 
 // Compound index to quickly find a member's record in a room

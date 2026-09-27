@@ -30,6 +30,7 @@ const messageSchema = new mongoose.Schema({
   },
 }, {
   timestamps: true,
+  collection: 'shocket_messages'
 });
 
 // Compound index for fetching messages by room in chronological order

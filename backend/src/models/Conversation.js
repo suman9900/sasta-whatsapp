@@ -28,6 +28,7 @@ const conversationSchema = new mongoose.Schema({
   },
 }, {
   timestamps: true,
+  collection: 'shocket_conversations'
 });
 
 // Index for cleanup of inactive rooms
